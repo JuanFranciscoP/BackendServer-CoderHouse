@@ -11,7 +11,6 @@ class UsersManager {
   init() {
     try {
       const exist = fs.existsSync(this.path);
-      console.log(exist);
       if (!exist) {
         const stringData = JSON.stringify([], null, 2);
         fs.writeFile(this.path, stringData, (err) => {
@@ -51,7 +50,11 @@ class UsersManager {
     try {
       let users = await fs.promises.readFile(this.path, "utf-8");
       users = JSON.parse(users);
-      return users;
+      if (users.length > 0) {
+        console.log(users);
+      } else {
+        console.log("lista de usuarios vacia");
+      }
     } catch (error) {
       throw error;
     }
@@ -91,12 +94,18 @@ class UsersManager {
 
 async function test() {
   const users1 = new UsersManager();
-  await users1.create({
-  email: "asd@gmail.com",
-  role: "JEFE",
-  password: "batocongotas"
-  })
-  await users1.readOne("fd6649fdce3e8b");
+   await users1.create({
+     email: "asd@gmail.com",
+     role: "user",
+     password: "batocongotas",
+   });
+   await users1.create({
+     email: "asereje@gmail.com",
+     role: "admin",
+     password: "abarajamelabaniera",
+   });
+    await users1.readOne("fd6649fdce3e8b");
+    await users1.read();
 }
 
 test();
