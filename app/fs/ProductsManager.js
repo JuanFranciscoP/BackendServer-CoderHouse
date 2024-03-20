@@ -1,7 +1,6 @@
 //falta hacer los cambios para que el gestor de productos difiera del de usuarios. y funcione correctamente
 
 const fs = require("fs");
-const crypto = require("crypto");
 
 class ProductsManager {
   constructor() {
@@ -26,22 +25,21 @@ class ProductsManager {
   async create(data) {
     try {
     } catch (error) {}
-    if (!data.email || !data.password || !data.role) {
+    if (!data.price || !data.stock || !data.photo) {
       console.log(
-        "faltan datos, revise la informacion necesaria para crear el usuario"
+        "faltan datos, revise la informacion necesaria para crear el producto"
       );
     } else {
-      const user = {
-        id: crypto.randomBytes(12).toString("hex"),
+      const product = {
         photo: data.photo,
-        email: data.email,
-        password: data.password,
-        role: data.role,
+        title: data.title,
+        stock: data.stock,
+        price: data.price,
       };
 
       let products = await fs.promises.readFile(this.path, "utf-8");
       products = JSON.parse(products);
-      products.push(user);
+      products.push(product);
       products = JSON.stringify(products, null, 2);
       await fs.promises.writeFile(this.path, products);
     }
@@ -53,21 +51,21 @@ class ProductsManager {
       if (products.length > 0) {
         console.log(products);
       } else {
-        console.log("lista de usuarios vacia");
+        console.log("sin productos en el listado");
       }
     } catch (error) {
       throw error;
     }
   }
-  async readOne(id) {
+  async readOne(title) {
     try {
       let products = await fs.promises.readFile(this.path, "utf-8");
       products = JSON.parse(products);
-      const filteredUser = products.find((each) => each.id === id);
-      if (!filteredUser) {
-        console.log("usuario no encontrado");
+      const filteredProduct = products.find((each) => each.title === title);
+      if (!filteredProduct) {
+        console.log("producto no encontrado");
       } else {
-        console.log(filteredUser);
+        console.log(filteredProduct);
       }
     } catch (error) {
       throw error;
@@ -79,12 +77,12 @@ class ProductsManager {
       products = JSON.parse(products);
       filteredproducts = products.filter((each) => each.id !== id);
       if (filteredproducts.length === products.length) {
-        console.log("usuario no encontrado en la base de datos");
+        console.log("producto no encontrado en la base de datos");
       } else {
         products = filteredproducts;
         products = JSON.stringify(products, null, 2);
         await fs.promises.writeFile(this.path, products);
-        console.log("usuario eliminado");
+        console.log("producto eliminado");
       }
     } catch (error) {
       throw error;
@@ -93,19 +91,21 @@ class ProductsManager {
 }
 
 async function test() {
-  const products1 = new productsManager();
+  const products1 = new ProductsManager();
    await products1.create({
-     email: "asd@gmail.com",
-     role: "user",
-     password: "batocongotas",
+    title: "nike airforce",
+     stock: 500,
+     photo: "zapatilla.jpg",
+     price: 150,
    });
    await products1.create({
-     email: "asereje@gmail.com",
-     role: "admin",
-     password: "abarajamelabaniera",
+    title: "adidas classic",
+    stock: 400,
+    photo: "zapatilla2.jpg",
+    price: 120,
    });
-    await products1.readOne("fd6649fdce3e8b");
-    await products1.read();
+    await products1.readOne("nike airforce");
+    //await products1.read();
 }
 
 test();
