@@ -9,7 +9,6 @@ class NotesManager {
   init() {
     const exists = fs.existsSync(this.path);
     if (!exists) {
-      const stringData = JSON.stringify([], null, 2);
       fs.writeFile(this.path, stringData, (err) => {
         if (err) {
           console.log(err);
