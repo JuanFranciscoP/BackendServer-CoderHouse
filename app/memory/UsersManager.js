@@ -2,6 +2,8 @@ const crypto = require("crypto");
 
 
 
+
+
 class ProductManager {
     static #products = [];
     create(data) {
@@ -32,4 +34,3 @@ class ProductManager {
   });
   
   gestorDeProductos.read()
-  

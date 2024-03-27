@@ -1,0 +1,14 @@
+[
+  {
+    "id": "197bfb1f2380a1b843f327f2",
+    "email": "asd@gmail.com",
+    "password": "batocongotas",
+    "role": "user"
+  },
+  {
+    "id": "f166f2ebb37439ffdae0acd1",
+    "email": "asereje@gmail.com",
+    "password": "abarajamelabaniera",
+    "role": "admin"
+  }
+]
