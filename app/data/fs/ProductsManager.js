@@ -1,10 +1,11 @@
 //falta hacer los cambios para que el gestor de productos difiera del de usuarios. y funcione correctamente
 
-const fs = require("fs");
+import fs from "fs";
+import crypto from "crypto"
 
 class ProductsManager {
   constructor() {
-    this.path = "./app/fs/files/products.json";
+    this.path = "./data/fs/files/products.json";
     this.init();
   }
   init() {
@@ -24,25 +25,28 @@ class ProductsManager {
   }
   async create(data) {
     try {
+      if (!data.title || !data.category) {
+        console.log(
+          "faltan datos, revise la informacion necesaria para crear el producto"
+        );
+      } else {
+        const product = {
+          photo: data.photo || "random.jpg",
+          title: data.title,
+          stock: data.stock || "ilimitado",
+          price: data.price || "lo que puedas pagar $",
+          category: data.category,
+          id: crypto.randomBytes(12).toString("hex")
+        };
+  
+        let products = await fs.promises.readFile(this.path, "utf-8");
+        products = JSON.parse(products);
+        products.push(product);
+        products = JSON.stringify(products, null, 2);
+        await fs.promises.writeFile(this.path, products);
+      }
     } catch (error) {}
-    if (!data.price || !data.stock || !data.photo) {
-      console.log(
-        "faltan datos, revise la informacion necesaria para crear el producto"
-      );
-    } else {
-      const product = {
-        photo: data.photo,
-        title: data.title,
-        stock: data.stock,
-        price: data.price,
-      };
-
-      let products = await fs.promises.readFile(this.path, "utf-8");
-      products = JSON.parse(products);
-      products.push(product);
-      products = JSON.stringify(products, null, 2);
-      await fs.promises.writeFile(this.path, products);
-    }
+    
   }
   async read() {
     try {
@@ -50,6 +54,7 @@ class ProductsManager {
       products = JSON.parse(products);
       if (products.length > 0) {
         console.log(products);
+        return products
       } else {
         console.log("sin productos en el listado");
       }
@@ -57,14 +62,15 @@ class ProductsManager {
       throw error;
     }
   }
-  async readOne(title) {
+  async readOne(id) {
     try {
       let products = await fs.promises.readFile(this.path, "utf-8");
       products = JSON.parse(products);
-      const filteredProduct = products.find((each) => each.title === title);
+      const filteredProduct = products.find((each) => each.id === id);
       if (!filteredProduct) {
         console.log("producto no encontrado");
       } else {
+        return filteredProduct;
         console.log(filteredProduct);
       }
     } catch (error) {
@@ -108,4 +114,5 @@ async function test() {
     //await products1.read();
 }
 
-test();
+const productsManager = new ProductsManager();
+export default productsManager
