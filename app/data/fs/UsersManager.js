@@ -1,11 +1,9 @@
-//crear condicionales en los metodos de la clase para el caso de no encontrar el id//
-
-const fs = require("fs");
-const crypto = require("crypto");
+import fs from"fs";
+import crypto from "crypto";
 
 class UsersManager {
   constructor() {
-    this.path = "./app/fs/files/users.json";
+    this.path = "./data/fs/files/users.json";
     this.init();
   }
   init() {
@@ -25,26 +23,27 @@ class UsersManager {
   }
   async create(data) {
     try {
+      if (!data.email || !data.password || !data.role) {
+        console.log(
+          "faltan datos, revise la informacion necesaria para crear el usuario"
+        );
+      } else {
+        const user = {
+          id: crypto.randomBytes(12).toString("hex"),
+          photo: data.photo,
+          email: data.email,
+          password: data.password,
+          role: data.role,
+        };
+  
+        let users = await fs.promises.readFile(this.path, "utf-8");
+        users = JSON.parse(users);
+        users.push(user);
+        users = JSON.stringify(users, null, 2);
+        await fs.promises.writeFile(this.path, users);
+      }
     } catch (error) {}
-    if (!data.email || !data.password || !data.role) {
-      console.log(
-        "faltan datos, revise la informacion necesaria para crear el usuario"
-      );
-    } else {
-      const user = {
-        id: crypto.randomBytes(12).toString("hex"),
-        photo: data.photo,
-        email: data.email,
-        password: data.password,
-        role: data.role,
-      };
-
-      let users = await fs.promises.readFile(this.path, "utf-8");
-      users = JSON.parse(users);
-      users.push(user);
-      users = JSON.stringify(users, null, 2);
-      await fs.promises.writeFile(this.path, users);
-    }
+      console.log(error);
   }
   async read() {
     try {
@@ -108,4 +107,5 @@ async function test() {
     await users1.read();
 }
 
-test();
+const usersManager = new UsersManager();
+export default usersManager
