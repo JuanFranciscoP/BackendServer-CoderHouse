@@ -2,6 +2,7 @@
 
 import fs from "fs";
 import crypto from "crypto"
+import { stringify } from "querystring";
 
 class ProductsManager {
   constructor() {
@@ -44,6 +45,7 @@ class ProductsManager {
         products.push(product);
         products = JSON.stringify(products, null, 2);
         await fs.promises.writeFile(this.path, products);
+        return product
       }
     } catch (error) {}
     
@@ -92,6 +94,27 @@ class ProductsManager {
       }
     } catch (error) {
       throw error;
+    }
+  }
+  async update(id,data){
+    try {
+      let products = await this.read();
+      let one = products.find(each=>each.id===id);
+      if(one) {
+        for (let prop in data) {
+          one[prop] = data[prop]
+        }
+        products = JSON.stringify(products,null,2);
+        await fs.promises.writeFile(this.path,products)
+        return one; 
+      } else {
+        const error = new Error('NOT FOUND');
+        error.statusCode = 404;
+        throw error
+      }
+      
+    } catch (error) {
+      throw error
     }
   }
 }

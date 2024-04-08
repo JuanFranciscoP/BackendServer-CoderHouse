@@ -10,10 +10,11 @@ const ready = ()=> console.log(`server ready on port ${port}`);
 server.listen(port,ready);
 
 server.use(express.urlencoded({extended: true}));
+server.use(express.json());
 
 
 
-
+//router
 server.get("/", async(req,res)=>{
         try {
             return res.status(200).json({
@@ -33,7 +34,42 @@ server.get("/", async(req,res)=>{
 
 //endpoints para ProductsManager
 
+const create = async(req,res)=>{
+    try {
+        const data = req.body;
+        const one =  await productsManager.create(data);
+        return res.json({
+            statusCode: 201 ,
+            message: `created!, id del producto: ${one.id}`
+        })
 
+    } catch (error) {
+        return res.json({
+            statusCode: error.statusCode || 500,
+            message: error.message || "CODER API ERROR"
+        })
+    }
+}
+
+const update = async(req,res)=>{
+    try {
+        const {nid} = req.params;
+        const data = req.body;
+        const one = await productsManager.update(nid,data);
+        return res.json({
+            statusCode: 200,
+            response: one,
+            message:"producto modificado correctamente"
+        })
+    } catch (error) {
+        return res.json({
+            statusCode: error.statusCode || 500,
+            message: error.message || "CODER API ERROR"
+        })
+    }
+}
+server.post("/api/products", create);
+server.put("/api/products/:nid", update);
 
 server.get("/api/products/:title/:category", async(req,res)=> {
     try {
@@ -64,36 +100,14 @@ server.get("/api/products", async (req,res)=>{
         })
     } catch (error) {
         console.log(error);
-        return res.status(500).json({
+        return res.status(500).json({ 
             response: "error",
             success: false
         })
     }
 })
 
-server.get("/api/products/:pid", async(req,res)=> {
-    try {
-        const {pid} = req.params;
-        const one = await productsManager.readOne(pid);
-        if(one){
-            return res.status(201).json({
-                response: one,
-                success: true
-            })
-        } else {
-            const error = new Error("NOT FOUND")
-            error.statusCode = 404
-            throw error
-        }
-        
-    } catch (error) {
-        console.log(error);
-        return res.status(error.statusCode).json({
-            response: error.message,
-            success: false
-        })
-    }
-})
+
 
 
 //endpoints para UsersManager
