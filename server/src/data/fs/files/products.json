@@ -126,5 +126,13 @@
     "price": 550,
     "category": "newCategory",
     "id": "4f27708e1a5cfa7523842f8f"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "algohacambiado",
+    "stock": "ilimitado",
+    "price": 100000000,
+    "category": "dentro de mi",
+    "id": "3ae091f39010c49419b572dc"
   }
 ]

@@ -79,18 +79,21 @@ class ProductsManager {
       throw error;
     }
   }
-  async destroyOne(id) {
+  async destroy(id) {
     try {
       let products = await fs.promises.readFile(this.path, "utf-8");
       products = JSON.parse(products);
-      filteredproducts = products.filter((each) => each.id !== id);
-      if (filteredproducts.length === products.length) {
-        console.log("producto no encontrado en la base de datos");
+      let product = products.find((each)=> each.id === id);
+      console.log(product)
+      if (product) {
+        let filteredProducts = products.filter((each)=> each.id !== id);
+        filteredProducts = JSON.stringify(filteredProducts, null, 2);
+        await fs.promises.writeFile(this.path, filteredProducts);
+        return product
       } else {
-        products = filteredproducts;
-        products = JSON.stringify(products, null, 2);
-        await fs.promises.writeFile(this.path, products);
-        console.log("producto eliminado");
+        const error = new Error ("product not found!");
+        error.statusCode = 404;
+        throw error
       }
     } catch (error) {
       throw error;

@@ -53,13 +53,12 @@ const create = async(req,res)=>{
 
 const update = async(req,res)=>{
     try {
-        const {nid} = req.params;
+        const {pid} = req.params;
         const data = req.body;
-        const one = await productsManager.update(nid,data);
+        const one = await productsManager.update(pid,data);
         return res.json({
             statusCode: 200,
             response: one,
-            message:"producto modificado correctamente"
         })
     } catch (error) {
         return res.json({
@@ -68,26 +67,29 @@ const update = async(req,res)=>{
         })
     }
 }
+
+const destroy = async (req,res)=>{
+    try {
+        const {pid} = req.params;
+        const one = await productsManager.destroy(pid);
+        return res.json({
+            statusCode: 200,
+            response: one,
+            message: "producto eliminado correctamente"
+        })
+    } catch (error) {
+        return res.json({
+            statusCode: error.statusCode || 500,
+            message: error.message || "CODER API ERROR"
+        })
+    }
+}
+
+server.delete("/api/products/:pid", destroy)
 server.post("/api/products", create);
 server.put("/api/products/:nid", update);
 
-server.get("/api/products/:title/:category", async(req,res)=> {
-    try {
-        const {title, category} = req.params;
-        const data = {title, category};
-        const one = await productsManager.create(data);
-        return res.status(201).json({
-            response: {title, category},
-            success: true
-        })
-    } catch (error) {
-        console.log(error);
-        return res.status(500).json({
-            response: "error",
-            success: false
-        })
-    }
-})
+
 
 server.get("/api/products", async (req,res)=>{
     try {
