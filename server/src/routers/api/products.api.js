@@ -8,11 +8,13 @@ const productsRouter = Router()
 productsRouter.get("/", async (req,res,next)=>{
     try {
         const {category} = req.query;
+        console.log(category);
         const allProducts = await productsManager.read(category);
         return res.json({ 
             response: allProducts,
-            category,
-            statusCode: 200
+            category: category? category : "Todos los productos",
+            statusCode: 200,
+            message: `${allProducts.length} productos en el listado`
         })
     } catch (error) {
         next(error)

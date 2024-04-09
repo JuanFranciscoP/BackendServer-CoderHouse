@@ -20,9 +20,8 @@ server.use(pathHandler)
 //router
 server.get("/", async(req,res,next)=>{
         try {
-            return res.status(200).json({
+            return res.json({
                 response: "Coder Api",
-                success: true
             })
         } catch (error) {
             next(error)

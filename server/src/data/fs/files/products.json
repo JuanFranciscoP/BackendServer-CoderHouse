@@ -1,138 +1,322 @@
 [
   {
-    "photo": "random.jpg",
-    "title": "titulo nuevo",
-    "stock": "ilimitado",
-    "price": "lo que puedas pagar $",
-    "category": "categoria nueva",
-    "id": "7ff0c51ec33d7bbd2232ff9b"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "titulo nuevo2",
-    "stock": "ilimitado",
-    "price": "lo que puedas pagar $",
-    "category": "categoria nueva2",
-    "id": "3bd765b3b424221017e1ca45"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "zapatillas",
-    "stock": "ilimitado",
-    "price": "lo que puedas pagar $",
-    "category": "deportivas",
-    "id": "f2de36089143357db853e920"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "reloj",
-    "stock": "ilimitado",
-    "price": "lo que puedas pagar $",
-    "category": "deportivo",
-    "id": "71c2be9a0fb1e09934f563dc"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "remera",
-    "stock": "ilimitado",
-    "price": "lo que puedas pagar $",
-    "category": "urbana",
-    "id": "68f9daaed78f9f588819ae95"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "Buzo cuello redondo",
-    "stock": "ilimitado",
-    "price": "lo que puedas pagar $",
-    "category": "sweater",
-    "id": "8e7185ff4be9d08fac13d773"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "productoloco",
-    "stock": "ilimitado",
-    "price": 500,
-    "category": "postmanproduct",
-    "id": "973a33393fa061ae75fde7ca"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "productoNuevo",
-    "stock": "ilimitado",
-    "price": 550,
-    "category": "newCategory",
-    "id": "59a7a376775935a0b50ce1a5"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "productoNuevo",
-    "stock": "ilimitado",
-    "price": 550,
-    "category": "newCategory",
-    "id": "06a07b482cdc1565d6919bcc"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "productoNuevo",
-    "stock": "ilimitado",
-    "price": 550,
-    "category": "newCategory",
-    "id": "babfae8a611e76ac7759ba9a"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "productoNuevo",
-    "stock": "ilimitado",
-    "price": 550,
-    "category": "newCategory",
-    "id": "4a6c2e216a932f3b6de6bacb"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "productoNuevo",
-    "stock": "ilimitado",
-    "price": 550,
-    "category": "newCategory",
-    "id": "dbde0e2cf87d512ccff56d32"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "productoNuevo",
-    "stock": "ilimitado",
-    "price": 550,
-    "category": "newCategory",
-    "id": "ea961ce1d1fb332d41d2a96d"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "productoNuevo",
-    "stock": "ilimitado",
-    "price": 550,
-    "category": "newCategory",
-    "id": "5797e59275039077b3663d09"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "productoNuevo",
-    "stock": "ilimitado",
-    "price": 550,
-    "category": "newCategory",
-    "id": "4f27708e1a5cfa7523842f8f"
-  },
-  {
-    "photo": "random.jpg",
-    "title": "algohacambiado",
-    "stock": "ilimitado",
-    "price": 100000000,
-    "category": "dentro de mi",
-    "id": "3ae091f39010c49419b572dc"
-  },
-  {
     "photo": "sweater.jpg",
     "title": "sweater cuello redondo",
     "stock": 120,
     "price": 150,
     "category": "sweaters",
     "id": "aafc02a5562601596f2a52b7"
+  },
+  {
+    "id": "bd9cc06881d8e0b1507da07d",
+    "title": "remera escote en v",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 60,
+    "category": "remeras"
+  },
+  {
+    "id": "52700014c99a067d1e4eccd8",
+    "title": "jean oxford negro",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 60,
+    "category": "pantalones"
+  },
+  {
+    "id": "df18e9d8b71e9fdf7842a35f",
+    "title": "jean oxford azul",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 80,
+    "category": "pantalones"
+  },
+  {
+    "id": "bd5f0bb6a3886acfe4e7053d",
+    "title": "campera rompevientos",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 150,
+    "category": "abrigos"
+  },
+  {
+    "id": "4ff76d4b5ff53350fe06dbd9",
+    "title": "medias largas algodon",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 20,
+    "category": "ropa interior"
+  },
+  {
+    "id": "209e1cdec91621d3470b54e6",
+    "title": "medias largas algodon a rayas",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 25,
+    "category": "ropa interior"
+  },
+  {
+    "id": "f878aeac1af5afbcfd92532d",
+    "title": "boxer talle L",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 30,
+    "category": "ropa interior"
+  },
+  {
+    "id": "bc8ef31b01eb88416a86b70f",
+    "title": "boxer azul talle L",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 35,
+    "category": "ropa interior"
+  },
+  {
+    "id": "67995f568e202488e201487b",
+    "title": "parka beige XL",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 120,
+    "category": "abrigos"
+  },
+  {
+    "id": "05e7ca0c1ec6767c8dd978e7",
+    "title": "parka negra XL",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 120,
+    "category": "abrigos"
+  },
+  {
+    "id": "00bb4145565da881cd81b153",
+    "title": "campera negra XL",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 120,
+    "category": "abrigos"
+  },
+  {
+    "id": "cf835c8257916ea59ecf6028",
+    "title": "joggins grises",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 70,
+    "category": "pantalones"
+  },
+  {
+    "id": "fd1e0a92e373e416d40be2c2",
+    "title": "joggins azules talle S",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 70,
+    "category": "pantalones"
+  },
+  {
+    "id": "ade64eabfa1a2b1cf65f380b",
+    "title": "jean skinny",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 75,
+    "category": "pantalones"
+  },
+  {
+    "id": "cea379e43dfec51dec14e54e",
+    "title": "jean regular azul",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 75,
+    "category": "pantalones"
+  },
+  {
+    "id": "5e9665755814d0d51ea6619c",
+    "title": "buzo canguro marron",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 100,
+    "category": "abrigos"
+  },
+  {
+    "id": "ee91fe0a1bc86c90d13f6f0a",
+    "title": "buzo canguro azul",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "abrigos"
+  },
+  {
+    "id": "2251d2e9f771a367b2f9bfb7",
+    "title": "buzo canguro blanco y negro",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "abrigos"
+  },
+  {
+    "id": "4d252adede7f9c9fc06acdd4",
+    "title": "buzo oversize cuello redondo",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "abrigos"
+  },
+  {
+    "id": "6393c16e4573e85143bc5aba",
+    "title": "chaleco beige",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "abrigos"
+  },
+  {
+    "id": "8eb47bc9d1fc5ad53e6dfd67",
+    "title": "chaleco negro",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "abrigos"
+  },
+  {
+    "id": "2b7fb24d3947a8207bc9d0a7",
+    "title": "chaleco algodon azul",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "abrigos"
+  },
+  {
+    "id": "6f09cfa6ab178b2afe54700e",
+    "title": "chaleco algodon blanco",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "abrigos"
+  },
+  {
+    "id": "a8e43aa256d987ea64e1bfd7",
+    "title": "remera cuello rendondo estampa",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "remeras"
+  },
+  {
+    "id": "ba75b6284748b39a784cae67",
+    "title": "remera cuello rendondo rayas",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "remeras"
+  },
+  {
+    "id": "426880ec0bcf83bd18eef772",
+    "title": "remera cuello rendondo naranja",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "remeras"
+  },
+  {
+    "id": "465da976f052b501424a30ba",
+    "title": "remera cuello rendondo negra",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "remeras"
+  },
+  {
+    "id": "c7624b05d1c2861e43c9f1dd",
+    "title": "remera cuello rendondo azul",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "remeras"
+  },
+  {
+    "id": "c284f8b61c3096ccb8586470",
+    "title": "remera cuello rendondo blanca",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "remeras"
+  },
+  {
+    "id": "1f8d109e671adfd5abb42aae",
+    "title": "remera cuello rendondo estampa rock",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "remeras"
+  },
+  {
+    "id": "d51c1646a8e7051c4d34814a",
+    "title": "remera cuello rendondo estampa flores",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "remeras"
+  },
+  {
+    "id": "f38c76559cf83f21bc62da31",
+    "title": "gorro de lana azul",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "accesorios"
+  },
+  {
+    "id": "83dc63b508be71f9a0f42e78",
+    "title": "gorro de lana negro",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 30,
+    "category": "accesorios"
+  },
+  {
+    "id": "1bde7ad034206a7bf3891807",
+    "title": "morral de cuero",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 40,
+    "category": "accesorios"
+  },
+  {
+    "id": "467465d7780076a97fd46a72",
+    "title": "morral tela",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 40,
+    "category": "accesorios"
+  },
+  {
+    "id": "0e159330add082c09c036a31",
+    "title": "mochila deportiva",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 40,
+    "category": "accesorios"
+  },
+  {
+    "id": "40d939f50135bc2a91ee1905",
+    "title": "mochila deportiva negra",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 40,
+    "category": "accesorios"
+  },
+  {
+    "id": "567ca30bf984e6757b754de2",
+    "title": "rinonera tela azul",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 40,
+    "category": "accesorios"
+  },
+  {
+    "id": "dd0f47dd7b2ee115e803e968",
+    "title": "rinonera cuerina",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 40,
+    "category": "accesorios"
   }
 ]

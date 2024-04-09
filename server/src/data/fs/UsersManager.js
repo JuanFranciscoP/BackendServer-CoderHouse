@@ -34,6 +34,7 @@ class UsersManager {
           email: data.email,
           password: data.password,
           role: data.role || 0,
+          signUpDate: new Date
         };
   
         let users = await fs.promises.readFile(this.path, "utf-8");
@@ -48,17 +49,26 @@ class UsersManager {
     }
       
   }
-  async read() {
+  async read(role) {
     try {
       let users = await fs.promises.readFile(this.path, "utf-8");
       users = JSON.parse(users);
-      if (users.length > 0) {
-        return users;
-      } else {
+      if (!role) {
+        if(users.length === 0){
         const error = new Error("sin usuarios registrados!");
+        error.statusCode = 404;
+        throw error}
+        return users
+      }
+      const filteredUsers = users.filter(each=>each.role === parseInt(role))
+          
+      if(filteredUsers.length === 0){
+        const error = new Error("no hay usuarios registrados con este rol!");
         error.statusCode = 404;
         throw error
       }
+    return filteredUsers
+
     } catch (error) {
       throw error;
     }
@@ -86,6 +96,10 @@ class UsersManager {
       if(one) {
         for (let prop in data) {
           one[prop] = data[prop]
+        }
+        one = {
+          ...one,
+          lastModification: new Date
         }
         users = JSON.stringify(users,null,2);
         await fs.promises.writeFile(this.path,users)

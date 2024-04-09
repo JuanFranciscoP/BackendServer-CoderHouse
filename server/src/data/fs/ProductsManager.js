@@ -23,17 +23,18 @@ class ProductsManager {
   }
   async create(data) {
     try {
-      if (!data.title || !data.category) {
+      if (!data.title) {
           const error = new Error ("faltan datos para agregar el producto");
           throw error
       } else {
         const product = {
-          photo: data.photo || "random.jpg",
+          id: crypto.randomBytes(12).toString("hex"),
           title: data.title,
-          stock: data.stock || "ilimitado",
-          price: data.price || "lo que puedas pagar $",
-          category: data.category,
-          id: crypto.randomBytes(12).toString("hex")
+          photo: data.photo || "random.jpg",
+          stock: data.stock || 1,
+          price: data.price || 1,
+          category: data.category || "defaultCategory"
+          
         };
   
         let products = await fs.promises.readFile(this.path, "utf-8");
@@ -48,19 +49,25 @@ class ProductsManager {
     }
     
   }
-  async read() {
+  async read(cat) {
     try {
       let products = await fs.promises.readFile(this.path, "utf-8");
-      products = JSON.parse(products);
-      if (products.length > 0) {
-        console.log(products);
+      products = JSON.parse(products)
+      if(!cat){
+         if(products.length === 0){
+          const error = new Error("no hay productos en el listado");
+          error.statusCode = 404;
+          throw error } 
         return products
-      } else {
-        const error = new Error("no hay productos en el listado");
-        error.statusCode = 404;
-        throw error
-      }
-    } catch (error) {
+      }   
+      const filteredProducts = products.filter(each=>each.category === cat);  
+      if(filteredProducts.length === 0){
+          const error = new Error ("no hay productos de esta categoria!");
+          error.statusCode = 404;
+          throw error
+        }
+        return filteredProducts
+      }catch (error) {
       throw error;
     }
   }
@@ -84,7 +91,6 @@ class ProductsManager {
       let products = await fs.promises.readFile(this.path, "utf-8");
       products = JSON.parse(products);
       let product = products.find((each)=> each.id === id);
-      console.log(product)
       if (product) {
         let filteredProducts = products.filter((each)=> each.id !== id);
         filteredProducts = JSON.stringify(filteredProducts, null, 2);

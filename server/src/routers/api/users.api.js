@@ -5,10 +5,12 @@ const usersRouter = Router()
 
 usersRouter.get("/", async(req,res,next) => {
     try {
-        const allUsers = await usersManager.read();
+        const {role} = req.query;
+        const allUsers = await usersManager.read(role);
         return res.json({
             statusCode: 200,
             response: allUsers,
+            role: role || "todos los usuarios",
             message: `${allUsers.length} usuario/s registrados actualmente`
         })
 

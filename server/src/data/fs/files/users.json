@@ -19,5 +19,13 @@
     "email": "asdasdo@coder.com.ar",
     "password": "asdasd",
     "role": 0
+  },
+  {
+    "id": "d944da0c2247fbb85a9aa6ed",
+    "photo": "default-photo.jpg",
+    "email": "administradorGato@admin.com",
+    "password": "dasdas",
+    "role": 1,
+    "signUpDate": "2024-04-09T16:17:43.224Z"
   }
 ]
