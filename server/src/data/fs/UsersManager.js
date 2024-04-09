@@ -3,7 +3,7 @@ import crypto from "crypto";
 
 class UsersManager {
   constructor() {
-    this.path = "./data/fs/files/users.json";
+    this.path = "./src/data/fs/files/users.json";
     this.init();
   }
   init() {
@@ -23,17 +23,17 @@ class UsersManager {
   }
   async create(data) {
     try {
-      if (!data.email || !data.password || !data.role) {
-        console.log(
-          "faltan datos, revise la informacion necesaria para crear el usuario"
-        );
+      if (!data.email || !data.password) {
+        const error = new Error ("faltan datos, revise la informacion necesaria para crear el usuario");
+        error.statusCode = 401
+        throw error
       } else {
         const user = {
           id: crypto.randomBytes(12).toString("hex"),
-          photo: data.photo,
+          photo: data.photo || "default-photo.jpg",
           email: data.email,
           password: data.password,
-          role: data.role,
+          role: data.role || 0,
         };
   
         let users = await fs.promises.readFile(this.path, "utf-8");
@@ -41,18 +41,23 @@ class UsersManager {
         users.push(user);
         users = JSON.stringify(users, null, 2);
         await fs.promises.writeFile(this.path, users);
+        return user
       }
-    } catch (error) {}
-      console.log(error);
+    } catch (error) {
+      throw error;
+    }
+      
   }
   async read() {
     try {
       let users = await fs.promises.readFile(this.path, "utf-8");
       users = JSON.parse(users);
       if (users.length > 0) {
-        console.log(users);
+        return users;
       } else {
-        console.log("lista de usuarios vacia");
+        const error = new Error("sin usuarios registrados!");
+        error.statusCode = 404;
+        throw error
       }
     } catch (error) {
       throw error;
@@ -64,26 +69,58 @@ class UsersManager {
       users = JSON.parse(users);
       const filteredUser = users.find((each) => each.id === id);
       if (!filteredUser) {
-        console.log("usuario no encontrado");
+        const error = new Error("Usuario no encontrado");
+        error.statusCode = 404;
+        throw error
       } else {
-        console.log(filteredUser);
+        return filteredUser;
       }
     } catch (error) {
       throw error;
     }
   }
+  async update(id,data){
+    try {
+      let users = await this.read();
+      let one = users.find(each=>each.id===id);
+      if(one) {
+        for (let prop in data) {
+          one[prop] = data[prop]
+        }
+        users = JSON.stringify(users,null,2);
+        await fs.promises.writeFile(this.path,users)
+        return one; 
+      } else {
+        const error = new Error('NOT FOUND');
+        error.statusCode = 404;
+        throw error
+      }
+      
+    } catch (error) {
+      throw error
+    }
+  }
+
+
   async destroyOne(id) {
     try {
       let users = await fs.promises.readFile(this.path, "utf-8");
       users = JSON.parse(users);
-      filteredUsers = users.filter((each) => each.id !== id);
-      if (filteredUsers.length === users.length) {
-        console.log("usuario no encontrado en la base de datos");
+      const removedUser = users.find(each => each.id === id)
+      if (!removedUser) {
+        const error = new Error("usuario no encontrado en la base de datos");
+        error.statusCode = 404;
+        throw error
       } else {
-        users = filteredUsers;
-        users = JSON.stringify(users, null, 2);
-        await fs.promises.writeFile(this.path, users);
-        console.log("usuario eliminado");
+        let filteredUsers = users.filter((each) => each.id !== id);
+        const q = filteredUsers.length;
+        filteredUsers = JSON.stringify(filteredUsers, null, 2);
+        await fs.promises.writeFile(this.path, filteredUsers);
+        const result = {
+          removedUser,
+          q
+        }
+        return result
       }
     } catch (error) {
       throw error;

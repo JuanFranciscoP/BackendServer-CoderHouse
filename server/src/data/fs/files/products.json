@@ -57,14 +57,6 @@
   },
   {
     "photo": "random.jpg",
-    "title": "productoloco",
-    "stock": "ilimitado",
-    "price": 500,
-    "category": "postmanproduct",
-    "id": "80601d63a7bc8fdae9995eeb"
-  },
-  {
-    "photo": "random.jpg",
     "title": "productoNuevo",
     "stock": "ilimitado",
     "price": 550,
@@ -134,5 +126,13 @@
     "price": 100000000,
     "category": "dentro de mi",
     "id": "3ae091f39010c49419b572dc"
+  },
+  {
+    "photo": "sweater.jpg",
+    "title": "sweater cuello redondo",
+    "stock": 120,
+    "price": 150,
+    "category": "sweaters",
+    "id": "aafc02a5562601596f2a52b7"
   }
 ]

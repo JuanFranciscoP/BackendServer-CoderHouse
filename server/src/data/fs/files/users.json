@@ -1,14 +1,23 @@
 [
   {
-    "id": "197bfb1f2380a1b843f327f2",
-    "email": "asd@gmail.com",
-    "password": "batocongotas",
-    "role": "user"
+    "id": "a03ef6b3b00725db4c36e66e",
+    "photo": "default-photo.jpg",
+    "email": "lacoderneta@coder.com.ar",
+    "password": "codeandoAndo",
+    "role": 0
   },
   {
-    "id": "f166f2ebb37439ffdae0acd1",
-    "email": "asereje@gmail.com",
-    "password": "abarajamelabaniera",
-    "role": "admin"
+    "id": "517208794841f0cc1e76bdf7",
+    "photo": "default-photo.jpg",
+    "email": "franjuancisco@coder.com.ar",
+    "password": "eaeapepe",
+    "role": 0
+  },
+  {
+    "id": "e652e4af75d1e6edae9e5b58",
+    "photo": "default-photo.jpg",
+    "email": "asdasdo@coder.com.ar",
+    "password": "asdasd",
+    "role": 0
   }
 ]

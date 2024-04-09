@@ -1,9 +1,9 @@
 import fs from "fs";
 import crypto from "crypto"
 
-class ProductsManager {
+class CartsManager {
   constructor() {
-    this.path = "./src/data/fs/files/products.json";
+    this.path = "./src/data/fs/files/carts.json";
     this.init();
   }
   init() {
@@ -15,7 +15,7 @@ class ProductsManager {
           console.log(err);
         });
       } else {
-        console.log("gestor de productos ya creado");
+        console.log("gestor de carts creado");
       }
     } catch (error) {
       console.log(error);
@@ -56,9 +56,7 @@ class ProductsManager {
         console.log(products);
         return products
       } else {
-        const error = new Error("no hay productos en el listado");
-        error.statusCode = 404;
-        throw error
+        console.log("sin productos en el listado");
       }
     } catch (error) {
       throw error;
@@ -121,24 +119,3 @@ class ProductsManager {
     }
   }
 }
-
-async function test() {
-  const products1 = new ProductsManager();
-   await products1.create({
-    title: "nike airforce",
-     stock: 500,
-     photo: "zapatilla.jpg",
-     price: 150,
-   });
-   await products1.create({
-    title: "adidas classic",
-    stock: 400,
-    photo: "zapatilla2.jpg",
-    price: 120,
-   });
-    await products1.readOne("nike airforce");
-    //await products1.read();
-}
-
-const productsManager = new ProductsManager();
-export default productsManager
