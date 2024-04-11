@@ -1,14 +1,14 @@
 import { Router } from "express";
 import productsManager from "../../data/fs/ProductsManager.js";
-
+import __dirname from "../../../utils.js";
 
 const productsRouter = Router()
 
 
 productsRouter.get("/", async (req,res,next)=>{
     try {
+        console.log(__dirname+'/src/views')
         const {category} = req.query;
-        console.log(category);
         const allProducts = await productsManager.read(category);
         return res.json({ 
             response: allProducts,
