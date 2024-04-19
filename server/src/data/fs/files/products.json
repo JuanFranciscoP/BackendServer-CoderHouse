@@ -1,0 +1,434 @@
+[
+  {
+    "photo": "sweater.jpg",
+    "title": "sweater cuello redondo",
+    "stock": 120,
+    "price": 150,
+    "category": "sweaters",
+    "id": "aafc02a5562601596f2a52b7"
+  },
+  {
+    "id": "bd9cc06881d8e0b1507da07d",
+    "title": "remera escote en v",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 60,
+    "category": "remeras"
+  },
+  {
+    "id": "52700014c99a067d1e4eccd8",
+    "title": "jean oxford negro",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 60,
+    "category": "pantalones"
+  },
+  {
+    "id": "df18e9d8b71e9fdf7842a35f",
+    "title": "jean oxford azul",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 80,
+    "category": "pantalones"
+  },
+  {
+    "id": "bd5f0bb6a3886acfe4e7053d",
+    "title": "campera rompevientos",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 150,
+    "category": "abrigos"
+  },
+  {
+    "id": "4ff76d4b5ff53350fe06dbd9",
+    "title": "medias largas algodon",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 20,
+    "category": "ropa interior"
+  },
+  {
+    "id": "209e1cdec91621d3470b54e6",
+    "title": "medias largas algodon a rayas",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 25,
+    "category": "ropa interior"
+  },
+  {
+    "id": "f878aeac1af5afbcfd92532d",
+    "title": "boxer talle L",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 30,
+    "category": "ropa interior"
+  },
+  {
+    "id": "bc8ef31b01eb88416a86b70f",
+    "title": "boxer azul talle L",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 35,
+    "category": "ropa interior"
+  },
+  {
+    "id": "67995f568e202488e201487b",
+    "title": "parka beige XL",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 120,
+    "category": "abrigos"
+  },
+  {
+    "id": "05e7ca0c1ec6767c8dd978e7",
+    "title": "parka negra XL",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 120,
+    "category": "abrigos"
+  },
+  {
+    "id": "00bb4145565da881cd81b153",
+    "title": "campera negra XL",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 120,
+    "category": "abrigos"
+  },
+  {
+    "id": "cf835c8257916ea59ecf6028",
+    "title": "joggins grises",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 70,
+    "category": "pantalones"
+  },
+  {
+    "id": "fd1e0a92e373e416d40be2c2",
+    "title": "joggins azules talle S",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 70,
+    "category": "pantalones"
+  },
+  {
+    "id": "ade64eabfa1a2b1cf65f380b",
+    "title": "jean skinny",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 75,
+    "category": "pantalones"
+  },
+  {
+    "id": "cea379e43dfec51dec14e54e",
+    "title": "jean regular azul",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 75,
+    "category": "pantalones"
+  },
+  {
+    "id": "5e9665755814d0d51ea6619c",
+    "title": "buzo canguro marron",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 100,
+    "category": "abrigos"
+  },
+  {
+    "id": "ee91fe0a1bc86c90d13f6f0a",
+    "title": "buzo canguro azul",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "abrigos"
+  },
+  {
+    "id": "2251d2e9f771a367b2f9bfb7",
+    "title": "buzo canguro blanco y negro",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "abrigos"
+  },
+  {
+    "id": "4d252adede7f9c9fc06acdd4",
+    "title": "buzo oversize cuello redondo",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "abrigos"
+  },
+  {
+    "id": "6393c16e4573e85143bc5aba",
+    "title": "chaleco beige",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "abrigos"
+  },
+  {
+    "id": "8eb47bc9d1fc5ad53e6dfd67",
+    "title": "chaleco negro",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "abrigos"
+  },
+  {
+    "id": "2b7fb24d3947a8207bc9d0a7",
+    "title": "chaleco algodon azul",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "abrigos"
+  },
+  {
+    "id": "6f09cfa6ab178b2afe54700e",
+    "title": "chaleco algodon blanco",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "abrigos"
+  },
+  {
+    "id": "a8e43aa256d987ea64e1bfd7",
+    "title": "remera cuello rendondo estampa",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 105,
+    "category": "remeras"
+  },
+  {
+    "id": "ba75b6284748b39a784cae67",
+    "title": "remera cuello rendondo rayas",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "remeras"
+  },
+  {
+    "id": "426880ec0bcf83bd18eef772",
+    "title": "remera cuello rendondo naranja",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "remeras"
+  },
+  {
+    "id": "465da976f052b501424a30ba",
+    "title": "remera cuello rendondo negra",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "remeras"
+  },
+  {
+    "id": "c7624b05d1c2861e43c9f1dd",
+    "title": "remera cuello rendondo azul",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "remeras"
+  },
+  {
+    "id": "c284f8b61c3096ccb8586470",
+    "title": "remera cuello rendondo blanca",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "remeras"
+  },
+  {
+    "id": "1f8d109e671adfd5abb42aae",
+    "title": "remera cuello rendondo estampa rock",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "remeras"
+  },
+  {
+    "id": "d51c1646a8e7051c4d34814a",
+    "title": "remera cuello rendondo estampa flores",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "remeras"
+  },
+  {
+    "id": "f38c76559cf83f21bc62da31",
+    "title": "gorro de lana azul",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 55,
+    "category": "accesorios"
+  },
+  {
+    "id": "83dc63b508be71f9a0f42e78",
+    "title": "gorro de lana negro",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 30,
+    "category": "accesorios"
+  },
+  {
+    "id": "1bde7ad034206a7bf3891807",
+    "title": "morral de cuero",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 40,
+    "category": "accesorios"
+  },
+  {
+    "id": "467465d7780076a97fd46a72",
+    "title": "morral tela",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 40,
+    "category": "accesorios"
+  },
+  {
+    "id": "0e159330add082c09c036a31",
+    "title": "mochila deportiva",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 40,
+    "category": "accesorios"
+  },
+  {
+    "id": "40d939f50135bc2a91ee1905",
+    "title": "mochila deportiva negra",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 40,
+    "category": "accesorios"
+  },
+  {
+    "id": "567ca30bf984e6757b754de2",
+    "title": "rinonera tela azul",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 40,
+    "category": "accesorios"
+  },
+  {
+    "id": "dd0f47dd7b2ee115e803e968",
+    "title": "rinonera cuerina",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 40,
+    "category": "accesorios"
+  },
+  {
+    "id": "be445b315e74d4d37fcdcfc4",
+    "title": "bufanda de lana gris",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 40,
+    "category": "accesorios"
+  },
+  {
+    "id": "7c8f65b3ce142720dee2fed8",
+    "title": "campera de jean con corderito",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 150,
+    "category": "abrigos"
+  },
+  {
+    "id": "3050444efe767965235f1859",
+    "title": "hoodie negro mujer",
+    "photo": "https://www.freepik.es/foto-gratis/joven-maqueta-sudadera-capucha_22117290.htm#query=sudaderas&position=49&from_view=keyword&track=sph&uuid=8373fa28-3013-44ff-af82-6a0dd7d5857a",
+    "stock": 1,
+    "price": 140,
+    "category": "abrigos"
+  },
+  {
+    "id": "9464a69ab7a3022355ffbac1",
+    "title": "hoodie negro mujer",
+    "photo": "https://img.freepik.com/foto-gratis/joven-maqueta-sudadera-capucha_23-2149246216.jpg?t=st=1713489265~exp=1713492865~hmac=4814535a09849d4c0e6c4a718511536261da2a47aa93b91231bdcbccc9f88177&w=740",
+    "stock": 1,
+    "price": 140,
+    "category": "abrigos"
+  },
+  {
+    "id": "37b2b27b6aba9a6587476bdc",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  },
+  {
+    "id": "cf192701d7bbc1b0654b40c9",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  },
+  {
+    "id": "d229034d9017faf1faebd3aa",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  },
+  {
+    "id": "85baa835a7ddbf44ebd7ad77",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  },
+  {
+    "id": "4690aa99ebcada52889e90ee",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  },
+  {
+    "id": "a47bb6e687f0b16fd8df3cc9",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  },
+  {
+    "id": "b95193ebad6b0f98c5e62ec9",
+    "title": "nbano",
+    "photo": "addadas",
+    "stock": 1,
+    "price": "sdasda",
+    "category": "adsasda"
+  },
+  {
+    "id": "c95ca11678e195518ed28549",
+    "title": "product title",
+    "photo": "https://www.lasermendoza.com.ar/wp-content/uploads/2020/04/remera-blanca-510x383.jpg",
+    "stock": 1,
+    "price": "120",
+    "category": "category nn"
+  },
+  {
+    "id": "b99e9c41df49d5dcba0052cd",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  },
+  {
+    "id": "63037c30108be71b5b63e044",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  }
+]
