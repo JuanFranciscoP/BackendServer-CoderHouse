@@ -10,7 +10,7 @@
           <input type="text" name="category" id="category" placeholder="product category" class="p-2 rounded-sm w-full">
           <input type="text" name="price" id="price" placeholder="product price (u$d)" class="p-2 rounded-sm w-full">
           <input type="text" name="photo" id="photo" placeholder="Url photo" class="p-2 rounded-sm w-full">
-          <button type="submit" id="register" class="flex w-full my-2 justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send</button>
+          <button type="button" id="register" class="flex w-full my-2 justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send</button>
         </form>
 
       </div>
@@ -31,7 +31,11 @@
         <p class="text-center text-gray-600 font-medium">Price:$${each.price}</p> 
         <p class="text-center text-gray-600 font-light">stock:${each.stock}</p> 
       </div>
+<<<<<<< .merge_file_sn8lSY
+  </div>` ).join("")
+=======
   </div>` ).join("") 
+>>>>>>> .merge_file_UNxdXD
   document.querySelector('#products').innerHTML = template
   });
   document.querySelector('#register').addEventListener("click", (event)=>{

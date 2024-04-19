@@ -16,12 +16,5 @@ productsRouter.get("/real", (req,res,next)=>{
         next(error)
     }
 })
-productsRouter.post("/real", (req,res,next)=>{
-    try {
-        
-    } catch (error) {
-        
-    }
-})
 
 export default productsRouter
