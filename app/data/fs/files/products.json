@@ -1,0 +1,130 @@
+[
+  {
+    "photo": "random.jpg",
+    "title": "titulo nuevo",
+    "stock": "ilimitado",
+    "price": "lo que puedas pagar $",
+    "category": "categoria nueva",
+    "id": "7ff0c51ec33d7bbd2232ff9b"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "titulo nuevo2",
+    "stock": "ilimitado",
+    "price": "lo que puedas pagar $",
+    "category": "categoria nueva2",
+    "id": "3bd765b3b424221017e1ca45"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "zapatillas",
+    "stock": "ilimitado",
+    "price": "lo que puedas pagar $",
+    "category": "deportivas",
+    "id": "f2de36089143357db853e920"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "reloj",
+    "stock": "ilimitado",
+    "price": "lo que puedas pagar $",
+    "category": "deportivo",
+    "id": "71c2be9a0fb1e09934f563dc"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "remera",
+    "stock": "ilimitado",
+    "price": "lo que puedas pagar $",
+    "category": "urbana",
+    "id": "68f9daaed78f9f588819ae95"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "Buzo cuello redondo",
+    "stock": "ilimitado",
+    "price": "lo que puedas pagar $",
+    "category": "sweater",
+    "id": "8e7185ff4be9d08fac13d773"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "productoloco",
+    "stock": "ilimitado",
+    "price": 500,
+    "category": "postmanproduct",
+    "id": "973a33393fa061ae75fde7ca"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "productoloco",
+    "stock": "ilimitado",
+    "price": 500,
+    "category": "postmanproduct",
+    "id": "80601d63a7bc8fdae9995eeb"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "productoNuevo",
+    "stock": "ilimitado",
+    "price": 550,
+    "category": "newCategory",
+    "id": "59a7a376775935a0b50ce1a5"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "productoNuevo",
+    "stock": "ilimitado",
+    "price": 550,
+    "category": "newCategory",
+    "id": "06a07b482cdc1565d6919bcc"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "productoNuevo",
+    "stock": "ilimitado",
+    "price": 550,
+    "category": "newCategory",
+    "id": "babfae8a611e76ac7759ba9a"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "productoNuevo",
+    "stock": "ilimitado",
+    "price": 550,
+    "category": "newCategory",
+    "id": "4a6c2e216a932f3b6de6bacb"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "productoNuevo",
+    "stock": "ilimitado",
+    "price": 550,
+    "category": "newCategory",
+    "id": "dbde0e2cf87d512ccff56d32"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "productoNuevo",
+    "stock": "ilimitado",
+    "price": 550,
+    "category": "newCategory",
+    "id": "ea961ce1d1fb332d41d2a96d"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "productoNuevo",
+    "stock": "ilimitado",
+    "price": 550,
+    "category": "newCategory",
+    "id": "5797e59275039077b3663d09"
+  },
+  {
+    "photo": "random.jpg",
+    "title": "productoNuevo",
+    "stock": "ilimitado",
+    "price": 550,
+    "category": "newCategory",
+    "id": "4f27708e1a5cfa7523842f8f"
+  }
+]

@@ -17,5 +17,4 @@ productsRouter.get("/real", (req,res,next)=>{
     }
 })
 
-
 export default productsRouter
