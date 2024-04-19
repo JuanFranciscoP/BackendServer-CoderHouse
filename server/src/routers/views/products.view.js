@@ -9,5 +9,19 @@ productsRouter.get("/", (req,res,next)=>{
         next(error)
     }
 })
+productsRouter.get("/real", (req,res,next)=>{
+    try {
+        return res.render("real")
+    } catch (error) {
+        next(error)
+    }
+})
+productsRouter.post("/real", (req,res,next)=>{
+    try {
+        
+    } catch (error) {
+        
+    }
+})
 
 export default productsRouter

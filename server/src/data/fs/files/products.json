@@ -318,5 +318,117 @@
     "stock": 1,
     "price": 40,
     "category": "accesorios"
+  },
+  {
+    "id": "be445b315e74d4d37fcdcfc4",
+    "title": "bufanda de lana gris",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 40,
+    "category": "accesorios"
+  },
+  {
+    "id": "7c8f65b3ce142720dee2fed8",
+    "title": "campera de jean con corderito",
+    "photo": "random.jpg",
+    "stock": 1,
+    "price": 150,
+    "category": "abrigos"
+  },
+  {
+    "id": "3050444efe767965235f1859",
+    "title": "hoodie negro mujer",
+    "photo": "https://www.freepik.es/foto-gratis/joven-maqueta-sudadera-capucha_22117290.htm#query=sudaderas&position=49&from_view=keyword&track=sph&uuid=8373fa28-3013-44ff-af82-6a0dd7d5857a",
+    "stock": 1,
+    "price": 140,
+    "category": "abrigos"
+  },
+  {
+    "id": "9464a69ab7a3022355ffbac1",
+    "title": "hoodie negro mujer",
+    "photo": "https://img.freepik.com/foto-gratis/joven-maqueta-sudadera-capucha_23-2149246216.jpg?t=st=1713489265~exp=1713492865~hmac=4814535a09849d4c0e6c4a718511536261da2a47aa93b91231bdcbccc9f88177&w=740",
+    "stock": 1,
+    "price": 140,
+    "category": "abrigos"
+  },
+  {
+    "id": "37b2b27b6aba9a6587476bdc",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  },
+  {
+    "id": "cf192701d7bbc1b0654b40c9",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  },
+  {
+    "id": "d229034d9017faf1faebd3aa",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  },
+  {
+    "id": "85baa835a7ddbf44ebd7ad77",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  },
+  {
+    "id": "4690aa99ebcada52889e90ee",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  },
+  {
+    "id": "a47bb6e687f0b16fd8df3cc9",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  },
+  {
+    "id": "b95193ebad6b0f98c5e62ec9",
+    "title": "nbano",
+    "photo": "addadas",
+    "stock": 1,
+    "price": "sdasda",
+    "category": "adsasda"
+  },
+  {
+    "id": "c95ca11678e195518ed28549",
+    "title": "product title",
+    "photo": "https://www.lasermendoza.com.ar/wp-content/uploads/2020/04/remera-blanca-510x383.jpg",
+    "stock": 1,
+    "price": "120",
+    "category": "category nn"
+  },
+  {
+    "id": "b99e9c41df49d5dcba0052cd",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
+  },
+  {
+    "id": "63037c30108be71b5b63e044",
+    "title": "",
+    "photo": "https://www.feed-image-editor.com/sites/default/files/perm/wysiwyg/image_not_available.png",
+    "stock": 1,
+    "price": 1,
+    "category": "defaultCategory"
   }
 ]

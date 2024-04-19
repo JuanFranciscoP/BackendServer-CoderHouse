@@ -1,0 +1,73 @@
+[
+    {
+        "articulo": "Pan 1kg",
+        "precio": 500,
+        "seccion": "almacen"
+    
+    },
+    {
+        "articulo": "Agua mineral 2L",
+        "precio": 300,
+        "seccion": "almacen"
+        
+    },
+    {
+        "articulo": "Queso-500gr",
+        "precio": 700,
+        "seccion": "almacen"
+        
+    },
+    {
+        "articulo": "Balde 10L",
+        "precio": 1500,
+        "seccion": "limpieza"
+        
+    },
+    {
+        "articulo": "Mopa",
+        "precio": 900,
+        "seccion": "limpieza"
+        
+    },
+    {
+        "articulo": "Lavandina 1L",
+        "precio": 250,
+        "seccion": "limpieza"
+        
+    },
+    {
+        "articulo": "Detergente",
+        "precio": 850,
+        "seccion": "limpieza"
+        
+    },
+    {
+        "articulo": "Fideos 200gr",
+        "precio": 400,
+        "seccion": "almacen"
+        
+    },
+    {
+        "articulo": "Salsa de tomate",
+        "precio": 250,
+        "seccion": "almacen"
+        
+    },
+    {
+        "articulo": "cafe en granos 250gr",
+        "precio": 2500,
+        "seccion": "almacen"
+        
+    },
+    {
+        "articulo": "Mayonesa Natura 250gr",
+        "precio": 1700,
+        "seccion": "almacen"
+        
+    },
+    {
+        "articulo": "Lomitos de Atun 180gr",
+        "precio": 900,
+        "seccion": "almacen"
+    }
+]

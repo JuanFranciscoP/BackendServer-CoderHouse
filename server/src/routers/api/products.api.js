@@ -1,13 +1,14 @@
 import { Router } from "express";
-import productsManager from "../../data/fs/ProductsManager.js";
-import __dirname from "../../../utils.js";
+import productsManager from "../../data/fs/ProductsManager.fs.js";
+import __dirname from "../../../utils.js"
+import isTitle from "../../middlewares/isTitle.mid.js";
+
 
 const productsRouter = Router()
 
 
 productsRouter.get("/", async (req,res,next)=>{
     try {
-        console.log(__dirname+'/src/views')
         const {category} = req.query;
         const allProducts = await productsManager.read(category);
         return res.json({ 
@@ -39,8 +40,8 @@ productsRouter.get("/:nid",async (req,res,next)=>{
         next(error)
     }
 })
-productsRouter.delete("/:pid", destroy)
-productsRouter.post("/", create);
+productsRouter.delete("/:pid", destroy);
+productsRouter.post("/", isTitle, create);
 productsRouter.put("/:pid", update);
 
 async function create (req,res,next){
