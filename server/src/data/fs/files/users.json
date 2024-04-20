@@ -1,28 +1,28 @@
 [
   {
     "id": "a03ef6b3b00725db4c36e66e",
-    "photo": "default-photo.jpg",
+    "photo": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     "email": "lacoderneta@coder.com.ar",
     "password": "codeandoAndo",
     "role": 0
   },
   {
     "id": "517208794841f0cc1e76bdf7",
-    "photo": "default-photo.jpg",
+    "photo": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     "email": "franjuancisco@coder.com.ar",
     "password": "eaeapepe",
     "role": 0
   },
   {
     "id": "e652e4af75d1e6edae9e5b58",
-    "photo": "default-photo.jpg",
+    "photo": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     "email": "asdasdo@coder.com.ar",
     "password": "asdasd",
     "role": 0
   },
   {
     "id": "d944da0c2247fbb85a9aa6ed",
-    "photo": "default-photo.jpg",
+    "photo": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
     "email": "administradorGato@admin.com",
     "password": "dasdas",
     "role": 1,

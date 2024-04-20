@@ -1,8 +1,7 @@
 import { Router } from "express";
 import productsManager from "../../data/fs/ProductsManager.fs.js";
 import __dirname from "../../../utils.js"
-import isTitle from "../../middlewares/isTitle.mid.js";
-
+import isRequired from "../../middlewares/isRequired.mid.js";
 
 const productsRouter = Router()
 
@@ -41,7 +40,7 @@ productsRouter.get("/:nid",async (req,res,next)=>{
     }
 })
 productsRouter.delete("/:pid", destroy);
-productsRouter.post("/", isTitle, create);
+productsRouter.post("/", isRequired , create);
 productsRouter.put("/:pid", update);
 
 async function create (req,res,next){

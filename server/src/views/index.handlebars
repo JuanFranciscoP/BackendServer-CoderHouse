@@ -1,7 +1,14 @@
-<h1>Coder Tienda</h1>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolor explicabo nesciunt inventore ad, similique dolorum doloremque corporis, blanditiis sint qui quam, hic beatae fugit accusantium aut sit. Incidunt, nihil!</p>
+<h1 class="text-center text-gray-600 text-4xl m-4">Coder Tienda</h1>
+<p class="text-center text-lg text-gray-500 m-2">Welcome to the Virtual Store, lets shop!</p>
+<div class="flex justify-center mt-4">
+  <div>
+    <img
+      src="https://st2.depositphotos.com/27756932/44691/i/450/depositphotos_446918058-stock-photo-small-tabby-kitten-is-hiding.jpg"
+      alt="cat-image"
+    />
+  </div>
+</div>
 <script src="/socket.io/socket.io.js"></script>
 <script>
-  const socket = io();
-  socket.on("products", data => console.log(data))
+  const socket = io(); socket.on("products", data => console.log(data))
 </script>
